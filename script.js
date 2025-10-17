@@ -180,3 +180,23 @@
     const eye=[Math.sin(yaw)*Math.cos(pitch)*dist, Math.sin(pitch)*dist + 1.0, Math.cos(yaw)*Math.cos(pitch)*dist];
   }
 })();
+
+// === Scroll Animations ===
+(() => {
+  const sections = document.querySelectorAll('section');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  sections.forEach(section => {
+    section.classList.add('fade-in-section');
+    observer.observe(section);
+  });
+})();
