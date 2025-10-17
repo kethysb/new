@@ -97,6 +97,18 @@
   #tech-wrap canvas{position:absolute;inset:0;width:100%;height:100%;display:block;z-index:1}
 
 /* Service Cards */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 42px;
+}
+
+@media (max-width: 980px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .service-card {
   background: rgba(26, 32, 44, 0.5);
   border: 1px solid rgba(255, 255, 255, 0.08);
