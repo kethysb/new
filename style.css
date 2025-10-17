@@ -88,9 +88,14 @@
     .spline-overlay{position:absolute;inset:0;z-index:2;pointer-events:none;background:radial-gradient(circle at 30% 40%, rgba(255,255,255,.025) 0%, transparent 70%),radial-gradient(circle at 70% 60%, rgba(255,255,255,.02) 0%, transparent 80%)}
     .spline-fallback{position:absolute;inset:0;z-index:3;display:grid;place-items:center;background:radial-gradient(1200px 70% at 50% 40%, rgba(255,255,255,.06), transparent 60%),linear-gradient(180deg, rgba(0,0,0,.2), rgba(0,0,0,.55));color:#e5e7eb;pointer-events:none}
     .cards-3d{display:flex;flex-wrap:wrap;gap:24px;justify-content:center;margin:18px auto 30px}
-    .glass-card{background:rgba(26,32,44,.7);backdrop-filter:blur(18px);border-radius:18px;padding:22px 24px;border:1px solid rgba(255,255,255,.08);box-shadow:0 10px 28px rgba(0,0,0,.28);transition:transform .28s var(--ease-out),box-shadow .28s var(--ease-out)}
-    .glass-card:hover{transform:translateY(-4px) scale(1.01);box-shadow:0 16px 46px rgba(0,0,0,.42)}
-    .pill{display:inline-block;padding:7px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.12);font-size:.9rem;margin:6px 6px 0 0}
+    .glass-card{background: #1a1a1a; border-radius:18px; padding:28px 24px; border:1px solid rgba(255,255,255,.1); box-shadow:0 10px 28px rgba(0,0,0,.28); transition:transform .3s ease-out, box-shadow .3s ease-out, border-color .3s ease-out; position: relative; overflow: hidden;}
+    .glass-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80"%3E%3Cpath fill="%23ffffff" fill-opacity="0.02" d="M0 0h80v80H0zM40 40h40v40H40z"/%3E%3C/svg%3E'); z-index: 1; }
+    .glass-card > * { position: relative; z-index: 2; }
+    .glass-card:hover{transform:translateY(-6px); box-shadow:0 20px 40px rgba(0,0,0,.3); border-color: rgba(255, 100, 255, 0.5);}
+    .glass-card:hover::after { content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(255, 100, 255, 0.2) 0%, rgba(255, 100, 255, 0) 70%); animation: glow-spin 5s linear infinite; }
+    @keyframes glow-spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    .pill{display:inline-block;padding:8px 16px;border-radius:8px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);font-size:.85rem;margin:8px 8px 0 0; font-weight: 500; transition: background .3s ease, color .3s ease;}
+    .pill:hover { background: rgba(255,255,255,.1); color: #fff; }
 
     @media (max-width:1024px){.spline-wrap{height:62vh}.cards-3d{gap:18px}.glass-card{padding:20px}}
     @media (max-width:768px){.title-3d.h1{font-size:2.2rem}.title-3d.h2{font-size:2rem}}
