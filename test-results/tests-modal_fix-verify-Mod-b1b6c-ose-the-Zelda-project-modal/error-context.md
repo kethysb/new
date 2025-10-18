@@ -1,0 +1,300 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]: AURORA
+    - navigation "Menú principal" [ref=e4]:
+      - link "Work" [ref=e5] [cursor=pointer]:
+        - /url: "#work"
+      - link "Neuro" [ref=e6] [cursor=pointer]:
+        - /url: "#neuro"
+      - link "Tech" [ref=e7] [cursor=pointer]:
+        - /url: "#technology"
+      - link "AI Tools" [ref=e8] [cursor=pointer]:
+        - /url: "#ai-tools"
+  - main [ref=e9]:
+    - region "Hero" [ref=e10]:
+      - generic [ref=e12]:
+        - heading "Aurora Performance" [level=1] [ref=e13]
+        - paragraph [ref=e14]: Onde Inovação vira Resultado.
+      - button "Rolar para baixo" [ref=e15] [cursor=pointer]:
+        - img [ref=e16]
+    - generic [ref=e19]:
+      - generic [ref=e20]:
+        - heading "Our Work" [level=2] [ref=e21]
+        - paragraph [ref=e22]: Projetos de marketing com foco em impacto visual e resultado.
+      - generic [ref=e23]:
+        - article [ref=e24]:
+          - link "Open Project Alpha" [ref=e25] [cursor=pointer]:
+            - /url: "#case-alpha"
+            - img "Conteúdos UGC em smartphone" [ref=e26]
+            - generic [ref=e27]:
+              - heading "Project Alpha" [level=3] [ref=e28]
+              - generic [ref=e29]:
+                - generic [ref=e30]: Paid Social
+                - generic [ref=e31]: UGC Studio
+                - generic [ref=e32]: TikTok + Meta
+              - generic [ref=e33]:
+                - text: Ver case
+                - img [ref=e34]
+        - article [ref=e36]:
+          - link "Open Project Beta" [ref=e37] [cursor=pointer]:
+            - /url: "#case-beta"
+            - img "Vitrine de moda" [ref=e38]
+            - generic [ref=e39]:
+              - heading "Project Beta" [level=3] [ref=e40]
+              - generic [ref=e41]:
+                - generic [ref=e42]: Influencers
+                - generic [ref=e43]: Seeding
+                - generic [ref=e44]: PR Kit
+              - generic [ref=e45]:
+                - text: Ver case
+                - img [ref=e46]
+        - article [ref=e48]:
+          - link "Open Project Gamma" [ref=e49] [cursor=pointer]:
+            - /url: "#case-gamma"
+            - img "Dashboard com gráficos" [ref=e50]
+            - generic [ref=e51]:
+              - heading "Project Gamma" [level=3] [ref=e52]
+              - generic [ref=e53]:
+                - generic [ref=e54]: CRO
+                - generic [ref=e55]: A/B
+                - generic [ref=e56]: Analytics
+              - generic [ref=e57]:
+                - text: Ver case
+                - img [ref=e58]
+        - article [ref=e60]:
+          - link "Open Project Delta" [ref=e61] [cursor=pointer]:
+            - /url: "#case-delta"
+            - img "Mesa com laptop" [ref=e62]
+            - generic [ref=e63]:
+              - heading "Project Delta" [level=3] [ref=e64]
+              - generic [ref=e65]:
+                - generic [ref=e66]: SEO
+                - generic [ref=e67]: Content Hub
+                - generic [ref=e68]: PR
+              - generic [ref=e69]:
+                - text: Ver case
+                - img [ref=e70]
+        - article [ref=e72]:
+          - link "Open Project Epsilon" [ref=e73] [cursor=pointer]:
+            - /url: "#case-epsilon"
+            - img "Câmera filmando" [ref=e74]
+            - generic [ref=e75]:
+              - heading "Project Epsilon" [level=3] [ref=e76]
+              - generic [ref=e77]:
+                - generic [ref=e78]: Video
+                - generic [ref=e79]: YouTube
+                - generic [ref=e80]: DOOH
+              - generic [ref=e81]:
+                - text: Ver case
+                - img [ref=e82]
+        - article [ref=e84]:
+          - link "Open Project Zeta" [ref=e85] [cursor=pointer]:
+            - /url: "#case-zeta"
+            - img "Gráficos de e‑mail marketing" [ref=e86]
+            - generic [ref=e87]:
+              - heading "Project Zeta" [level=3] [ref=e88]
+              - generic [ref=e89]:
+                - generic [ref=e90]: CRM
+                - generic [ref=e91]: Automations
+                - generic [ref=e92]: LTV
+              - generic [ref=e93]:
+                - text: Ver case
+                - img [ref=e94]
+    - 'region "Case: Project Alpha"':
+      - link "Close":
+        - /url: "#close"
+        - text: ✕
+      - article:
+        - generic:
+          - img "Project Alpha"
+        - generic:
+          - heading "Project Alpha" [level=3]
+          - paragraph: A complete brand overhaul for a leading tech startup, resulting in a 200% increase in market recognition.
+          - paragraph: "Behind the Scenes: The biggest challenge was redefining a decade-old brand without alienating its loyal user base. We navigated this through a series of deep‑dive workshops."
+    - 'region "Case: Project Beta"':
+      - link "Close":
+        - /url: "#close"
+        - text: ✕
+      - article:
+        - generic:
+          - img "Project Beta"
+        - generic:
+          - heading "Project Beta" [level=3]
+          - paragraph: A viral digital marketing campaign for a global fashion brand, reaching over 50 million unique users.
+          - paragraph: We had to produce content across three continents on a tight deadline. It was a logistical puzzle that our team solved with incredible grace and precision.
+    - 'region "Case: Project Gamma"':
+      - link "Close":
+        - /url: "#close"
+        - text: ✕
+      - article:
+        - generic:
+          - img "Project Gamma"
+        - generic:
+          - heading "Project Gamma" [level=3]
+          - paragraph: An award‑winning website redesign for an e‑commerce platform, boosting conversions by 40%.
+          - paragraph: "From Before to After: We transformed a cluttered, confusing interface into a clean, intuitive shopping experience that felt like a luxury boutique."
+    - 'region "Case: Project Delta"':
+      - link "Close":
+        - /url: "#close"
+        - text: ✕
+      - article:
+        - generic:
+          - img "Project Delta"
+        - generic:
+          - heading "Project Delta" [level=3]
+          - paragraph: Launched a new line of luxury skincare products, achieving market leadership in 6 months.
+          - paragraph: The key was crafting a narrative around natural ingredients that felt both scientific and soulful.
+    - 'region "Case: Project Epsilon"':
+      - link "Close":
+        - /url: "#close"
+        - text: ✕
+      - article:
+        - generic:
+          - img "Project Epsilon"
+        - generic:
+          - heading "Project Epsilon" [level=3]
+          - paragraph: Developed a content strategy that tripled organic traffic for a B2B SaaS company.
+          - paragraph: Our breakthrough came from creating an internal 'translator's guide' to turn complex features into compelling stories.
+    - 'region "Case: Project Zeta"':
+      - link "Close":
+        - /url: "#close"
+        - text: ✕
+      - article:
+        - generic:
+          - img "Project Zeta"
+        - generic:
+          - heading "Project Zeta" [level=3]
+          - paragraph: Crafted a new brand voice for a historic publishing house, engaging a new generation of readers.
+          - paragraph: We spent a week in their archives, reading old letters to capture the founder's original spirit before modernizing it for a digital audience.
+    - generic [ref=e96]:
+      - generic [ref=e97]:
+        - heading "AURORA" [level=1] [ref=e98]
+        - paragraph [ref=e99]: Marketing orientado por psicologia
+        - paragraph [ref=e100]: Neurociência aplicada para reduzir fricção, aumentar confiança e mover métricas — com ética e teste A/B contínuo.
+      - generic [ref=e105]:
+        - generic [ref=e106]:
+          - generic [ref=e107]:
+            - generic [ref=e108]: 🧠
+            - heading "Por que psicologia?" [level=4] [ref=e109]
+          - paragraph [ref=e110]: Decisões usam heurísticas. Mensagens e UX que reduzem atrito, ativam prova social e elevam valor percebido — com responsabilidade.
+          - generic [ref=e111]:
+            - generic [ref=e112]: Prova social
+            - generic [ref=e113]: Ancoragem
+            - generic [ref=e114]: Saliência
+        - generic [ref=e115]:
+          - generic [ref=e116]:
+            - generic [ref=e117]: 📊
+            - heading "Impacto comprovado" [level=4] [ref=e118]
+          - paragraph [ref=e119]:
+            - text: Médias em 90 dias com
+            - strong [ref=e120]: testes A/B
+            - text: +
+            - strong [ref=e121]: qualitativo
+            - text: .
+          - generic [ref=e122]:
+            - generic [ref=e123]:
+              - generic [ref=e124]: +42%
+              - text: Conversão
+            - generic [ref=e125]:
+              - generic [ref=e126]: +58%
+              - text: Engajamento
+        - generic [ref=e127]:
+          - generic [ref=e128]:
+            - generic [ref=e129]: 🏆
+            - heading "Casos" [level=4] [ref=e130]
+          - paragraph [ref=e131]:
+            - strong [ref=e132]: "Streaming:"
+            - text: +80% retenção com personalização por perfil.
+          - paragraph [ref=e133]:
+            - strong [ref=e134]: "E‑commerce:"
+            - text: 35% da receita via recomendações.
+    - generic [ref=e135]:
+      - generic [ref=e136]:
+        - heading "TECNOLOGIA APLICADA" [level=2] [ref=e137]
+        - paragraph [ref=e138]: Inovação que resolve problemas reais
+      - generic [ref=e141]:
+        - generic [ref=e142]:
+          - generic [ref=e143]:
+            - generic [ref=e144]: 🤖
+            - heading "Inteligência Artificial" [level=3] [ref=e145]
+          - paragraph [ref=e146]:
+            - text: Copilotos e automações (RAG, workflows) integrados aos seus dados para
+            - strong [ref=e147]: reduzir custo
+            - text: e
+            - strong [ref=e148]: acelerar operações
+            - text: com governança.
+          - generic [ref=e149]:
+            - generic [ref=e150]: Machine Learning
+            - generic [ref=e151]: Fine‑tuning
+            - generic [ref=e152]: RAG
+        - generic [ref=e153]:
+          - generic [ref=e154]:
+            - generic [ref=e155]: 🥽
+            - heading "Experiências Imersivas" [level=3] [ref=e156]
+          - paragraph [ref=e157]:
+            - text: Treinamentos, showrooms e ativações WebXR —
+            - strong [ref=e158]: engajamento alto
+            - text: sem fricção de instalação.
+          - generic [ref=e159]:
+            - generic [ref=e160]: WebXR
+            - generic [ref=e161]: AR/VR
+            - generic [ref=e162]: Three.js
+        - generic [ref=e163]:
+          - generic [ref=e164]:
+            - generic [ref=e165]: ⚛️
+            - heading "Computação Quântica" [level=3] [ref=e166]
+          - paragraph [ref=e167]:
+            - text: P&D focado em
+            - strong [ref=e168]: otimização
+            - text: e
+            - strong [ref=e169]: roteamento
+            - text: . Entrega de valor real — sem hype.
+          - generic [ref=e170]:
+            - generic [ref=e171]: QAOA
+            - generic [ref=e172]: Annealing
+            - generic [ref=e173]: POCs
+    - generic [ref=e174]:
+      - generic [ref=e175]:
+        - heading "AI TOOLS" [level=2] [ref=e176]
+        - paragraph [ref=e177]: Demos prontas para uso
+        - paragraph [ref=e178]: Widgets e pipelines que conectam dados, modelos e métricas — prontos para integrar no seu stack.
+      - generic [ref=e183]:
+        - generic [ref=e184]:
+          - heading "Copiloto de Atendimento" [level=3] [ref=e185]
+          - paragraph [ref=e186]:
+            - text: Responde tickets com contexto e guarda feedback.
+            - strong [ref=e187]: Tempo de resolução ↓
+            - text: .
+          - generic [ref=e188]:
+            - generic [ref=e189]: RAG
+            - generic [ref=e190]: Retrieval
+            - generic [ref=e191]: Feedback loop
+        - generic [ref=e192]:
+          - heading "Resumo de Reuniões" [level=3] [ref=e193]
+          - paragraph [ref=e194]: Gera decisões, owners e prazos automaticamente a partir do áudio.
+          - generic [ref=e195]:
+            - generic [ref=e196]: ASR
+            - generic [ref=e197]: Action Items
+            - generic [ref=e198]: CRM Sync
+        - generic [ref=e199]:
+          - heading "Gerador de Conteúdo" [level=3] [ref=e200]
+          - paragraph [ref=e201]: Posts, e‑mails e variações de anúncios com controle de tom e marca.
+          - generic [ref=e202]:
+            - generic [ref=e203]: Templates
+            - generic [ref=e204]: Brand Guardrails
+            - generic [ref=e205]: AB testing
+    - generic [ref=e207]:
+      - generic [ref=e208]: Services
+      - heading "O que fazemos" [level=2] [ref=e209]
+      - generic [ref=e210]:
+        - generic [ref=e211]: Estratégia
+        - generic [ref=e212]: Produto & Growth
+        - generic [ref=e213]: IA aplicada
+    - generic [ref=e215]:
+      - generic [ref=e216]: Studios
+      - heading "Nossos estúdios" [level=2] [ref=e217]
+      - paragraph [ref=e218]: Conteúdo institucional/contato aqui.
+```

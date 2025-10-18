@@ -178,3 +178,57 @@
   function render(t){
     gl.clearColor(0,0,0,0); gl.clear(gl.COLOR_BUFFER_BIT|gl.DEPTH_BUFFER_BIT);
     const eye=[Math.sin(yaw)*Math.cos(pitch)*dist, Math.sin(pitch)*dist + 1.0, Math.cos(yaw)*Math.cos(pitch)*dist];
+
+// === Modal robusto (JS) ===
+(() => {
+  const modalTriggers = document.querySelectorAll('a.case-media');
+  const modals = document.querySelectorAll('.case-modal');
+  const body = document.body;
+
+  function openModal(modalId) {
+    const modal = document.querySelector(modalId);
+    if (modal) {
+      modal.classList.add('is-open');
+      body.style.overflow = 'hidden';
+    }
+  }
+
+  function closeModal() {
+    const openModal = document.querySelector('.case-modal.is-open');
+    if (openModal) {
+      openModal.classList.remove('is-open');
+      body.style.overflow = '';
+    }
+  }
+
+  modalTriggers.forEach(trigger => {
+    trigger.addEventListener('click', (e) => {
+      e.preventDefault();
+      openModal(trigger.getAttribute('href'));
+    });
+  });
+
+  modals.forEach(modal => {
+    // Close button
+    const closeButton = modal.querySelector('.modal-close');
+    if (closeButton) {
+      closeButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        closeModal();
+      });
+    }
+    // Click outside to close
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+  });
+
+  // Escape key to close
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeModal();
+    }
+  });
+})();

@@ -56,13 +56,13 @@
 
     /* MODAIS */
     .case-modal{position:fixed;inset:0;padding:24px;display:grid;place-items:center;background:rgba(0,0,0,.72);backdrop-filter: blur(6px);z-index:120;opacity:0;pointer-events:none;transition:opacity .25s ease}
-    .case-modal:target{opacity:1;pointer-events:auto}
+    .case-modal.is-open{opacity:1;pointer-events:auto}
     .modal-card{width:min(92vw,980px);max-height:85vh;overflow:auto;border-radius:16px;border:1px solid rgba(255,255,255,.12);background:#0a0a0a;box-shadow:0 30px 80px rgba(0,0,0,.5)}
     .modal-media img{width:100%;display:block;border-bottom:1px solid rgba(255,255,255,.06)}
     .modal-body{padding:24px}
     .modal-body h3{font-family:"Playfair Display",Georgia,serif;font-size:clamp(22px,3vw,32px);margin:0 0 8px}
     .modal-body p{margin:10px 0;opacity:.92;line-height:1.6}
-    .modal-close{position:absolute;top:18px;right:18px;width:36px;height:36px;border-radius:999px;display:grid;place-items:center;color:#fff;text-decoration:none;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.06)}
+    .modal-close{position:absolute;top:18px;right:18px;width:36px;height:36px;border-radius:999px;display:grid;place-items:center;color:#fff;text-decoration:none;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.06);z-index: 150;}
     .modal-close:hover{background:rgba(255,255,255,.12)}
 
     /* ========= SEÇÕES 3D ========= */
