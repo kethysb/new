@@ -147,7 +147,7 @@
   const uEye = gl.getUniformLocation(prog,'uEye');
   const uLightDir = gl.getUniformLocation(prog,'uLightDir');
   const uColA = gl.getUniformLocation(prog,'uColA');
-  $1
+  const uColB = gl.getUniformLocation(prog,'uColB');
   const uColC = gl.getUniformLocation(prog,'uColC');
   const uTime = gl.getUniformLocation(prog,'uTime');
 
